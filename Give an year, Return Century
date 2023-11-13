@@ -1,0 +1,13 @@
+//////////////// Century print ///////////////
+
+Console.Write("Enter a year: ");
+int year = Convert.ToInt32(Console.ReadLine());
+
+int century = CenturyFun(year);
+
+Console.WriteLine("The century is: " + century);
+
+static int CenturyFun(int year)
+{
+    return (year + 99) / 100;
+}
